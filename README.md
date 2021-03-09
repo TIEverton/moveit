@@ -16,7 +16,7 @@
   </a>
   <img src="https://img.shields.io/static/v1?label=NLW&message=04&color=8257E5&labelColor=000000" alt="NLW 04" />
   <a href="https://github.com/TIEverton/tindev/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/TIEverton/tindev?color=8257E5&logo=github">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/TIEverton/moveit?color=8257E5&logo=github">
   </a>
 </p>
 
