@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/profile/evertonpinheiroti">
+  <a href="https://www.linkedin.com/in/evertonpinheiroti">
     <img alt="Everton Pinheiro" src="https://img.shields.io/badge/-Everton Pinheiro-8257E5?style=flat&logo=Linkedin&logoColor=white" />
   </a>
   <img src="https://img.shields.io/static/v1?label=NLW&message=04&color=8257E5&labelColor=000000" alt="NLW 04" />
