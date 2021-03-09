@@ -1,34 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+  <img alt="move.it" title="move.it" src=".github/logomoveit.png" />
+</h1>
 
-## Getting Started
+<p align="center">
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-preview">Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;
+</p>
 
-First, run the development server:
+<p align="center">
+  <a href="https://www.linkedin.com/profile/evertonpinheiroti">
+    <img alt="Everton Pinheiro" src="https://img.shields.io/badge/-Everton Pinheiro-8257E5?style=flat&logo=Linkedin&logoColor=white" />
+  </a>
+  <img src="https://img.shields.io/static/v1?label=NLW&message=04&color=8257E5&labelColor=000000" alt="NLW 04" />
+  <a href="https://github.com/TIEverton/tindev/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/TIEverton/tindev?color=8257E5&logo=github">
+  </a>
+</p>
+
+<br>
+
+<p align="center">
+  <img alt="Happy" src=".github/gif.gif" width="100%">
+</p>
+
+## 💻 Project
+
+Move.it is an app that uses a Pomodoro technique with physical exercises for those who spend a lot of time in front of the computer.
+
+## ✨ Technologies
+
+This project was developed using the following technologies:
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## 🔥 Preview
+
+[![Deploy with Vercel](https://vercel.com/button)](https://moveit-next-three-mu.vercel.app/)
+
+## 🔖 Layout
+
+You can view the layout of the project through [this link](https://www.figma.com/file/ge20pu3ofMOKoliUyKx1Nl/Move.it-1.0). You must have an account at [Figma] (http://figma.com/) to access it.
+
+## 🚀 Getting started
+
+Clone the project and access the folder
 
 ```bash
-npm run dev
-# or
-yarn dev
+$ git clone https://github.com/TIEverton/moveit.git && cd moveit
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Follow the steps below
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+# Install the dependencies
+$ yarn
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Start the project
+$ yarn dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navegador.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feito com ♥ by Everton Pinheiro 👋🏻 
