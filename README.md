@@ -64,8 +64,8 @@ $ yarn
 $ yarn dev
 ```
 
-Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navegador.
+You can now access [`localhost:3000`](http://localhost:3000) from your browser.
 
 ---
 
-Feito com ♥ by Everton Pinheiro 👋🏻 
+Done with ♥ by Everton Pinheiro 👋🏻 
