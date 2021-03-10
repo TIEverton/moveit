@@ -1,0 +1,109 @@
+.containerLogin {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: var(--blue) !important;
+  background: url('/background-logo.svg') no-repeat;
+  background-size: contain;
+}
+
+.containerLoginLeft {
+  flex: 1;
+}
+
+.containerLoginRight {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+.containerLoginRight > img {
+  width: 60%;
+  margin-bottom: 2rem;
+}
+
+.containerLoginRight strong {
+  color: var(--white);
+  font-size: 2.6rem;
+  font-weight: 600;
+
+  margin-bottom: 2rem;
+}
+
+.github {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  color: var(--text-highlight);
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  
+  margin-bottom: 2.4rem;
+}
+
+.github img {
+  margin-right: 1.2rem;
+}
+
+.github p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 30px;
+  width: 300px;
+}
+
+.containerLoginRight .formGithub {
+  display: flex;
+  flex-direction: row;
+}
+
+.containerLoginRight .formGithub  input {
+  background: linear-gradient(90deg, #4953B8 0%, rgba(73, 83, 184, 0.2) 100%);
+  border-radius: 5px 0px 0px 5px;
+  border: 0;
+
+  height: 5rem;
+  width: 21.25rem;
+  padding: 1.8rem;
+
+  outline: 0;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.containerLoginRight .formGithub  input:focus {
+  border: 1px solid var(--white);
+}
+
+.containerLoginRight .formGithub  input::placeholder {
+  color: var(--text-highlight);
+}
+
+.containerLoginRight .formGithub  button {
+  background: #4953B8;
+
+  height: 5rem;
+  width: 5rem;
+
+  border-radius: 0px 5px 5px 0px;
+  border: 0;
+  font-size: 0;
+
+  transition: background-color 0.2s;
+}
+
+.containerLoginRight .formGithub  button:hover {
+  background-color: var(--green);
+}
+
+@media(max-width: 700px) {
+
+  .containerLoginRight .formGithub  input {
+    width: 18rem;
+  }
+}
