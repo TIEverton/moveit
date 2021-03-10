@@ -30,7 +30,7 @@
 
 Move.it is an app that uses a Pomodoro technique with physical exercises for those who spend a lot of time in front of the computer.
 
-## ✨ Technologies
+## 🔌 Technologies
 
 This project was developed using the following technologies:
 
@@ -46,6 +46,15 @@ This project was developed using the following technologies:
 
 You can view the layout of the project through [this link](https://www.figma.com/file/ge20pu3ofMOKoliUyKx1Nl/Move.it-1.0). You must have an account at [Figma] (http://figma.com/) to access it.
 
+## ✨ Improvements
+
+- [ ] Create login screen
+- [ ] Integrate login screen with github API
+- [ ] Create side menu
+- [ ] Create leaderboard screen
+- [ ] Integration leaderboard 
+- [ ] Changes in component styling
+ 
 ## 🚀 Getting started
 
 Clone the project and access the folder
