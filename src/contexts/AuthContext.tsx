@@ -3,6 +3,7 @@ import Router from 'next/router';
 import Cookies from 'js-cookie';
 import axios from 'axios';
 import api from '../services/api';
+import toast from 'react-hot-toast';
 
 interface UserProps {
   id_git: string,
@@ -31,6 +32,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     const transformUser = username.toLowerCase();
 
     if (!username) {
+      toast.error('Username não pode ser vazio 😥')
       return
     }
 
@@ -38,6 +40,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     const existingUser = users.data.find((user) => user.login_git === transformUser)
 
     if (existingUser) {
+      toast.success('Bom te ter de volta! 🎉')
       setUser(existingUser)
       Cookies.set('user', existingUser);
       //console.log(JSON.parse(Cookies.get('user')))
@@ -56,11 +59,12 @@ export function AuthProvider({ children }: AuthProviderProps) {
         currentExperience: 0,
         challengesCompleted: 0,
       })
+      toast.success('Pronto para começar? 💥')
       Cookies.set('user', res.data);
       setUser(res.data)
       Router.push('/home')
     } catch (error) {
-      console.log('Algo deu errado, tente novamente!')
+      toast.error('Algo deu errado, tente novamente. 😵')
     }
   }
 
