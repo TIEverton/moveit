@@ -48,8 +48,9 @@ You can view the layout of the project through [this link](https://www.figma.com
 
 ## ✨ Improvements
 
-- [ ] Create login screen
+- [X] Create login screen
 - [ ] Integrate login screen with github API
+- [ ] Adding action messages
 - [ ] Create side menu
 - [ ] Create leaderboard screen
 - [ ] Integration leaderboard 
