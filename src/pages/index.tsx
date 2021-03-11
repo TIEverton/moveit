@@ -1,14 +1,15 @@
+import { useContext, useState } from 'react';
 import Head from 'next/head';
-import Router from 'next/router';
 
 import styles from '../styles/pages/Login.module.css'
-import { useState } from 'react';
+import { AuthContext } from '../contexts/AuthContext';
 
 export default function Index() {
+  const { signIn } = useContext(AuthContext);
   const [user, setUser] = useState('');
+
   function handleSubmit() {
-    console.log(user)
-    //Router.push('/home')
+    signIn(user);
   }
 
   return (
