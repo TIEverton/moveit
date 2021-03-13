@@ -55,6 +55,7 @@ You can view the layout of the project through [this link](https://www.figma.com
 - [ ] Create leaderboard screen
 - [ ] Integration leaderboard 
 - [ ] Changes in component styling
+- [ ] Create PWA 
  
 ## 🚀 Getting started
 
