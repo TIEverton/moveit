@@ -1,0 +1,31 @@
+.containerSidebar {
+  background: var(--white);
+  height: 100vh;
+  width: 112px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem 2rem 0rem;
+}
+
+.containerSidebar ul {
+  list-style: none;
+}
+
+.containerSidebar li {
+  transition: color 0.4s;
+  cursor: pointer;
+}
+
+.containerSidebar li:first-child {
+  margin-bottom: 2.5rem;
+}
+
+.containerSidebar li:hover {
+  color: var(--blue);
+}
+
+
+

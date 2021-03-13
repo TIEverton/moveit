@@ -29,8 +29,6 @@ interface ChallengesProviderProps {
   challengesCompleted: number;
 }
 
-
-
 export const ChallengesContext = createContext({} as ChallengesContextData);
 
 export function ChallengesProvider({

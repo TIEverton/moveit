@@ -1,4 +1,9 @@
 .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
   height: 100vh;
   max-width: 992px;
   margin: 0 auto;
@@ -8,7 +13,7 @@
   flex-direction: column;
 }
 
-.container section {
+.content section {
    flex: 1;
 
    display: grid;
