@@ -33,29 +33,30 @@ export default function Home() {
         <FiLogOut size={24} title="Logout" />
       </div>
 
-      <div className={styles.content}>
-        {isClicked ? (
-          <>
-            <ExperienceBar />
 
-            <CountdownProvider>
-              <section>
-                <div>
-                  <Profile />
-                  <CompletedChallenges />
-                  <Countdown />
-                </div>
-                <div>
-                  <ChallengeBox />
-                </div>
-              </section>
-            </CountdownProvider>
-          </>
-        ) : (
-          <Leaderboard />
-        )}
+      {isClicked ? (
 
-      </div>
+        <div className={styles.content}>
+          <ExperienceBar />
+
+          <CountdownProvider>
+            <section>
+              <div>
+                <Profile />
+                <CompletedChallenges />
+                <Countdown />
+              </div>
+              <div>
+                <ChallengeBox />
+              </div>
+            </section>
+          </CountdownProvider>
+        </div>
+      ) : (
+        <Leaderboard />
+      )}
+
+
     </div>
   )
 }

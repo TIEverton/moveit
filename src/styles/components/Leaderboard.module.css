@@ -1,0 +1,96 @@
+.containerLeaderboard {
+  display: flex;
+  justify-content: center;
+  
+  width: 95vw;
+}
+
+.contentLeader {
+  width: 80vw;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 6rem;
+}
+
+.contentLeader h1 {
+  margin-bottom: 4rem;
+}
+
+/*  CONTEÚDO DA TABELA */
+
+.tableLeader th {
+  color: var(--text);
+  font-size: 1rem;
+  padding-bottom: 1.4rem;
+}
+
+.tableLeader td {
+  text-align: left;
+  padding: 1rem;
+  
+}
+
+.tableLeader .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tableLeader .user strong {
+  font-size: 1.4rem;
+}
+
+.tableLeader .user > img {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.tableLeader .level {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.4rem;
+}
+
+.tableLeader .level > img {
+  margin-right: 1rem;
+}
+
+.tableLeader td:nth-child(1) {
+  text-align: center;
+  font-size: 1.6rem;
+  width: 8%;
+  border-right: 5px solid var(--background);
+  border-radius: 10px 0px 0px 10px;
+  
+}
+
+.tableLeader td:nth-child(4) {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.tableLeader tr {
+  
+  text-align: left;
+}
+
+.tableLeader tr:nth-child(n + 2) {
+  background-color: var(--white);
+}
+
+.tableLeader td:nth-child(n + 3) {
+  font-size: 1.2rem;
+  width: 20%;
+  padding: 0;
+}
+
+.tableLeader td:nth-child(n + 3) strong{
+  color: var(--blue-dark);
+}
+
+.separator {
+  margin: 0.5rem;
+}
