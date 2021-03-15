@@ -50,8 +50,8 @@ You can view the layout of the project through [this link](https://www.figma.com
 - [X] Create login screen ✔️
 - [X] Integrate login screen with github API ✔️
 - [X] Adding action messages ✔️
-- [ ] Create side menu
-- [ ] Create leaderboard screen
+- [X] Create side menu
+- [X] Create leaderboard screen
 - [ ] Integration leaderboard 
 - [ ] Changes in component styling
 - [ ] Create PWA 
