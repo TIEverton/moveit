@@ -21,13 +21,16 @@
 
 <br>
 
-<p align="center">
-  <img alt="Happy" src=".github/gif.gif" width="100%">
-</p>
-
 ## 💻 Project
 
 Move.it is an app that uses a Pomodoro technique with physical exercises for those who spend a lot of time in front of the computer.
+
+<p>
+  <img alt="move.it" width="450" title="move.it" src=".github/screen-login.png" />
+  <img alt="move.it" width="450" title="move.it" src=".github/screen-challenge.png" />
+  <img alt="move.it" width="450" title="move.it" src=".github/screen-leaderboard.png" />
+  <img alt="move.it" width="450" title="move.it" src=".github/screen-next.png" />
+</p>
 
 ## 🔌 Technologies
 
