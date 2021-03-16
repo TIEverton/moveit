@@ -52,9 +52,7 @@ You can view the layout of the project through [this link](https://www.figma.com
 - [X] Adding action messages ✔️
 - [X] Create side menu ✔️
 - [X] Create leaderboard screen ✔️
-- [ ] Integration leaderboard 
-- [ ] Changes in component styling
-- [ ] Create PWA 
+- [X] Integration leaderboard ✔️
  
 ## 🚀 Getting started
 
