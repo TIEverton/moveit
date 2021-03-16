@@ -2,6 +2,9 @@ import { createContext, useState, ReactNode, useEffect } from 'react';
 import Cookies from 'js-cookie';
 import challenges from '../../challenges.json';
 import { LevelUpModal } from '../components/LevelUpModal';
+import axios from 'axios';
+import api from '../services/api';
+import toast from 'react-hot-toast';
 
 interface Challenge {
   type: 'body' | 'eye';
@@ -10,6 +13,7 @@ interface Challenge {
 }
 
 interface ChallengesContextData {
+  user: string;
   level: number;
   currentExperience: number;
   experienceToNextLevel: number;
@@ -27,7 +31,10 @@ interface ChallengesProviderProps {
   level: number;
   currentExperience: number;
   challengesCompleted: number;
+  user: string;
 }
+
+
 
 export const ChallengesContext = createContext({} as ChallengesContextData);
 
@@ -38,6 +45,7 @@ export function ChallengesProvider({
   const [level, setLevel] = useState(rest.level ?? 1);
   const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ?? 0);
   const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted ?? 0);
+  const [user, setUser] = useState(rest.user);
 
   const [activeChallenge, setActiveChallenge] = useState(null)
   const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
@@ -46,13 +54,18 @@ export function ChallengesProvider({
 
   useEffect(() => {
     Notification.requestPermission();
+    console.log(rest.level, 'rest')
   }, [])
 
   useEffect(() => {
-    Cookies.set('level', String(level))
-    Cookies.set('currentExperience', String(currentExperience))
-    Cookies.set('challengesCompleted', String(challengesCompleted))
-
+    const userPut = (JSON.parse(rest.user));
+    api.put(`/users/${userPut.id}`, {
+      level: level,
+      currentExperience: currentExperience,
+      challengesCompleted: challengesCompleted,
+    }).then(response => {
+      console.log(response)
+    })
   }, [level, currentExperience, challengesCompleted])
 
   function levelUp() {
@@ -80,6 +93,7 @@ export function ChallengesProvider({
   }
 
   function resetChallenge() {
+    toast.error('Você falhou, tente novamente! 😟')
     setActiveChallenge(null);
   }
 
@@ -100,10 +114,12 @@ export function ChallengesProvider({
     setCurrentExperience(finalExperience);
     setActiveChallenge(null);
     setChallengesCompleted(challengesCompleted + 1);
+    toast.success('Você completou um desafio ✨')
   }
 
   return (
     <ChallengesContext.Provider value={{
+      user,
       level,
       currentExperience,
       challengesCompleted,

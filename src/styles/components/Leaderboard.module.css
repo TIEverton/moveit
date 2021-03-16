@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   
-  width: 95vw;
+  width: 90vw;
 }
 
 .contentLeader {
@@ -10,7 +10,6 @@
 
   display: flex;
   flex-direction: column;
-
   padding-top: 6rem;
 }
 
@@ -19,6 +18,10 @@
 }
 
 /*  CONTEÚDO DA TABELA */
+
+.contentLeader table{
+  border-collapse: collapse;
+}
 
 .tableLeader th {
   color: var(--text);
@@ -73,11 +76,10 @@
 }
 
 .tableLeader tr {
-  
   text-align: left;
 }
 
-.tableLeader tr:nth-child(n + 2) {
+.tableLeader tbody tr {
   background-color: var(--white);
 }
 
